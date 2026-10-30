@@ -1,0 +1,20 @@
+{
+  "name": "praktikum-zero-trust-security",
+  "version": "1.0.0",
+  "description": "Sistem Nilai dengan Zero Trust Security untuk praktikum",
+  "main": "gateway.js",
+  "scripts": {
+    "gateway": "node gateway.js",
+    "nilai": "node nilai.js",
+    "transkrip": "node transkrip.js",
+    "start": "concurrently \"npm run gateway\" \"npm run nilai\" \"npm run transkrip\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^9.1.2",
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.3",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
